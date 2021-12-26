@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-image: linear-gradient(to right, #b7caf4, #a6b9fb, #9da6ff, #9d91ff, #a479fb);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 80%;
+    height: 80vh;
+    background-color: #e4ecf9;
+}
+header{
+    height: 10vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #B7CAF4 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+header h1{
+    color: rgb(23, 83, 194);
+    font-size: 1.9vw;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+article{
+    padding: 3%;
+}
+article p{
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    color: #56678a;
+}
+article .small{
+    font-size: .7rem;
+    letter-spacing: .5;
+    padding-top: 2%;
+    color: rgb(142, 156, 161);
+}
+.key{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.result{
+    height: 40vh;
+    background-color: #fff;
+    width: 40%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.result p{
+    font-size: 1em;
+    color: #9dadce;
+}
+input{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 5% 10%;
+    border: solid .5px #a6b9fb;
+    border-radius: 5px;
+}
+input:focus{
+    outline: solid .3px black;
+    border: none;
+}
+form p{
+    font-size: 1em;
+    color: #9dadce;
+}
+.params{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2%;
+}
+.result p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.month{
+    flex: 4;
+    font-size: .8rem;
+    height: 100%;
+    background-color: #B7CAF4;
+    padding: 2% 5%;
+    color: #1d1f24;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: all .5s linear;
+}
+.month:hover{
+    background-color: #A479FB;
+}
+#tot{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+}
+.interest{
+    flex: 4;
+    height: 100%;
+    background-color: #A479FB;
+    padding: 2% 5%;
+    font-size: .9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: all .5s linear;
+}
+.interest:hover{
+    background-color: #B7CAF4;
+}
+.month p{
+    color: #241d1d;
+}
+.interest p{
+    color: #241d1d;
+}
+#month{
+    font-size: 2vw;
+    font-weight: bolder;
+    color: black;
+    padding-top: 3%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#int{
+    font-size: 2vw;
+    font-weight: bolder;
+    color: black;
+    padding-top: 3%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+    padding: 5%;
+    border: none;
+    background-color: #A479FB;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: all .5s linear;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #B7CAF4;
+}
+footer{
+    background-color: #1e172e;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* media query */
+@media screen and (max-width:480px) {
+    header h1{
+        color: rgb(23, 83, 194);
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    section{
+        height: auto;
+    }
+    article{
+        margin-bottom: 13%;
+    }
+    article p{
+        font-size: .9rem;
+        letter-spacing: 3px;
+        color: #56678a;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+    .key{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn{
+        padding: 5%;
+        margin-left: 30%;
+        margin-bottom: 22%;
+    }
+    .result{
+        width: 90%;
+        height: 80vh;
+        border-radius: 5px;
+    }
+    .params{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        padding: 2%;
+    }
+    .interest{
+        height: 100%;
+        background-color: #A479FB;
+        padding: 2% 5%;
+        font-size: .9rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        transition: all .5s linear;
+    }
+    main{
+        height: 170vh;
+    }
+    .month p{
+        color: #241d1d;
+        font-size: 1.3rem;
+    }
+    #month{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+        padding-top: 19%;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .interest p{
+        color: #241d1d;
+        font-size: 1.3rem;
+    }
+    #int{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: black;
+        padding-top: 19%;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}

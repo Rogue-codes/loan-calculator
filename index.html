@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400&family=Pushster&family=Roboto+Condensed:wght@400;700&family=Waterfall&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>AFRI BANK</h1>
+                <button>dark</button>
+            </header>
+
+            <article>
+               <p>Get started with digital credit experience</p> 
+               <p class="small">Qualify or apply for your loan in minutes</p>
+            </article>
+
+            <div class="key">
+                <form action="" id="frm">
+                    <p>Loan Amount</p>
+                    <input type="number" name="" id="principal">
+                    <p>Interest Rate(%)</p>
+                    <input type="number" id="interest" value='5'>
+                    <p>Period(yrs)</p>
+                    <input type="number" name="" id="time">
+                    <button class="btn" id="btn">SUBMIT</button>
+
+                </form>
+                <div class="result">
+                    <p>Your total payment will be</p>
+                    <h1 id="tot"></h1>
+                    <div class="params">
+                        <div class="month">
+                            <p>Monthly Payments</p>
+                            <p id="month"></p>
+                        </div>
+
+                        <div class="interest">
+                            <p>Interest Payment</p>
+                                <p id="int"></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; rogue-codes 2021
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
