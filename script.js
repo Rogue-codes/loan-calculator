@@ -15,20 +15,14 @@ calculate()
 
 function calculate(){
     const loanAmount = Number(amountEl.value)
-
     const time = Number(periodEl.value)
-
     console.log(time)
 
-    if(time === 5)
-
-    console.log('number')
 
     const interestRate = intEl.value/100
     
     const period = time * 12 
 
-    console.log(period)
     
     const total = loanAmount * period * interestRate
     // console.log(total)
@@ -39,7 +33,10 @@ function calculate(){
 
     const monthly = totalPayable/ period
 
+
     const m = monthly 
+ 
+
     month.innerText = '₦' + m.toFixed().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
     const interest = loanAmount * period * interestRate
@@ -58,6 +55,7 @@ form.addEventListener('submit', (e)=>{
 function dark(){
     sectionEl.classList.toggle('darkMode')
     headerEl.classList.toggle('darkMode')
+    darkModeToggle.classList.toggle('lgt')    
 }
 
 darkModeToggle.addEventListener('click', dark)
