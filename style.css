@@ -271,4 +271,22 @@ footer{
         padding-top: 19%;
         font-family: 'Roboto Condensed', sans-serif;
     }
+    .drk{
+        padding: 5%;
+        background: url("https://img.icons8.com/material-sharp/50/000000/do-not-disturb-2.png") center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+        border: none;
+    }
+    .lgt{
+        background: url("https://img.icons8.com/material-outlined/50/000000/sun.png") center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+        border: none;
+        background-color: #e4ecf9;
+    }
 }
