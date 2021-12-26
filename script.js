@@ -33,17 +33,20 @@ function calculate(){
 
     const monthly = totalPayable/ period
 
+    let monthlyResp = monthly.toFixed().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
-    const m = monthly 
- 
-
-    month.innerText = '₦' + m.toFixed().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    if (monthlyResp === "NaN") month.innerText = '₦' + 0;
+    else {
+        monthlyResp = month.innerText = '₦' + monthlyResp;
+    }
 
     const interest = loanAmount * period * interestRate
 
     interestEl.innerText = '₦' + interest.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
-    // console.log(interest)
+    var date = new Date()
+    var mainPaymentStartDate = new Date(date.setMonth(date.getMonth()+4))
+    console.log('Payment starts on ' + mainPaymentStartDate)
 }
 
 

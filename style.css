@@ -20,7 +20,8 @@ section{
     background-color: #1e172e;
 }
 .drk{
-    padding: 5%;
+    padding: 1%;
+    cursor: pointer;
     background: url("https://img.icons8.com/material-sharp/50/000000/do-not-disturb-2.png") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
