@@ -9,6 +9,7 @@ const periodEl = document.getElementById('time')
 const totalPay = document.getElementById('tot')
 const month = document.getElementById('month')
 const interestEl = document.getElementById('int')
+const paymentDate = document.getElementById('paymentDate')
 
 console.log(headerEl)
 calculate()
@@ -47,6 +48,7 @@ function calculate(){
     var date = new Date()
     var mainPaymentStartDate = new Date(date.setMonth(date.getMonth()+4))
     console.log('Payment starts on ' + mainPaymentStartDate)
+    paymentDate.innerText = 'Payment starts on ' + mainPaymentStartDate
 }
 
 
