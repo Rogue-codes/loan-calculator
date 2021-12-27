@@ -48,7 +48,7 @@ function calculate(){
     var date = new Date()
     var mainPaymentStartDate = new Date(date.setMonth(date.getMonth()+4))
     console.log('Payment starts on ' + mainPaymentStartDate)
-    paymentDate.innerText = 'Payment starts on ' + mainPaymentStartDate
+    // paymentDate.innerText = 'Payment starts on ' + mainPaymentStartDate
 }
 
 
