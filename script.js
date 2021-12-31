@@ -48,19 +48,46 @@ function calculate(){
     var date = new Date()
     var mainPaymentStartDate = new Date(date.setMonth(date.getMonth()+4))
     console.log('Payment starts on ' + mainPaymentStartDate)
-    // paymentDate.innerText = 'Payment starts on ' + mainPaymentStartDate
+    paymentDate.innerText = 'Payment starts on ' + mainPaymentStartDate
+
 }
-
-
 btnEl.addEventListener('click', calculate)
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
 })
 
-function dark(){
-    sectionEl.classList.toggle('darkMode')
-    headerEl.classList.toggle('darkMode')
-    darkModeToggle.classList.toggle('lgt')    
+let nightMode = localStorage.getItem('nightMode')
+
+function enableNightMode(){
+    sectionEl.classList.add('darkMode')
+    headerEl.classList.add('darkMode')
+    localStorage.setItem('nightMode', 'enabled')
 }
 
-darkModeToggle.addEventListener('click', dark)
+function disableNightMode(){
+    sectionEl.classList.remove('darkMode')
+    headerEl.classList.remove('darkMode')
+    localStorage.setItem('nightMode', null)
+ 
+}
+
+
+if(nightMode === 'enabled'){
+    enableNightMode()
+}else{
+    disableNightMode()
+}
+
+darkModeToggle.addEventListener('click', () => {
+    nightMode = localStorage.getItem('nightMode')
+    
+    if (nightMode == 'enabled'){
+        disableNightMode()
+        
+    }else{
+        enableNightMode()
+    }
+
+    darkModeToggle.classList.toggle('lgt')
+
+})
