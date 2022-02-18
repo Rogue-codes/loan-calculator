@@ -10,16 +10,27 @@ const totalPay = document.getElementById('tot')
 const month = document.getElementById('month')
 const interestEl = document.getElementById('int')
 const paymentDate = document.getElementById('paymentDate')
+const warn = document.getElementById('warning')
 
 console.log(headerEl)
-calculate()
+// calculate()
 
 function calculate(){
+
+
     const loanAmount = Number(amountEl.value)
     const time = Number(periodEl.value)
     console.log(time)
 
+    if(!periodEl.value & !amountEl.value){
+        setTimeout(function(){
+            warn.innerText = `Period and amount fields can't be left empty`
+            warn.style.color = 'red'
+            warn.style.fontSize = '10px'
 
+        },5000)
+        return
+    }
     const interestRate = intEl.value/100
     
     const period = time * 12 
